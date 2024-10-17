@@ -2,20 +2,7 @@ import React, {useRef} from 'react'
 import './contact.css';
 import emailjs from '@emailjs/browser';
 
-import SF from '../../assets/SF-logo.png'
-import SAE from '../../assets/sae-logo.png'
-import Regal from '../../assets/Regal-logo.png'
-import SolidWorks from '../../assets/solidworks-logo.png'
-import Polaris from '../../assets/Polaris-Industries-Logo.png'
-import OZ from '../../assets/OZRace-logo.png'
-import MilTool from '../../assets/MilTool-logo.png'
-import JWS from '../../assets/jwspeaker-logo.png'
-import Hoosier from '../../assets/hoosier-logo.png'
-import Hayes from '../../assets/hayes-logo.png'
-import Generac from '../../assets/generac-logo.png'
-import Evology from '../../assets/evology-logo.png'
-import HE from '../../assets/HE-logo.png'
-import IEEE from '../../assets/IEEE-logo.png'
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faTiktok, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -42,25 +29,24 @@ const Contact = () => {
     return (
         <section id="contactPage">
             <div id="clients">
-                <h1 className="contactPageTitle">Our Sponsors</h1>
-                <p className="clientDesc">Thank you to our sponsors for their generous support and partnership. Their contributions are vital to our success and are deeply appreciated!</p>
-            <div className="clientImgs">
-                <img src={SF} alt="Client" className="clientImg" />
-                <img src={SAE} alt="Client" className="clientImg" />
-                <img src={Regal} alt="Client" className="clientImg" />
-                <img src={SolidWorks} alt="Client" className="clientImg" />
-                <img src={Polaris} alt="Client" className="clientImg" />
-                <img src={OZ} alt="Client" className="clientImg" />
-                <img src={MilTool} alt="Client" className="clientImg" />
-                <img src={JWS} alt="Client" className="clientImg" />
-                <img src={Hoosier} alt="Client" className="clientImg" />
-                <img src={Hayes} alt="Client" className="clientImg" />
-                <img src={Generac} alt="Client" className="clientImg" />
-                <img src={Evology} alt="Client" className="clientImg" />
-                <img src={HE} alt="Client" className="clientImg" />
-                <img src={IEEE} alt="Client" className="clientImg" />
+                <h1 className="contactPageTitle">Our Services</h1>
+                <p className="clientDesc">We are committed to providing exceptional construction services tailored to meet our clients' needs. Our expertise ensures that every project is handled with precision and professionalism. Our services include:</p>
 
-            </div>
+                {/* Services Section */}
+                <div className="services">
+                    <div className="serviceBox">
+                        <h2>Residential Construction</h2>
+                        <p>Our residential construction services include custom home building, renovations, and additions. We work closely with homeowners to bring their visions to life while ensuring quality craftsmanship and attention to detail.</p>
+                    </div>
+                    <div className="serviceBox">
+                        <h2>Commercial Construction</h2>
+                        <p>We specialize in commercial construction projects, from office buildings to retail spaces. Our team is equipped to handle large-scale projects while maintaining a focus on quality, safety, and timely completion.</p>
+                    </div>
+                    <div className="serviceBox">
+                        <h2>Project Management</h2>
+                        <p>Our project management services ensure that every phase of your construction project runs smoothly. We coordinate resources, manage timelines, and communicate effectively with all stakeholders to deliver successful outcomes.</p>
+                    </div>
+                </div>
             </div>
             <div id="contact">
                 <h1 className="contactPageTitle">Contact Us</h1>

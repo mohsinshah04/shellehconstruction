@@ -91,3 +91,27 @@
     border: none;
     border-radius: 2rem;
 }
+.services {
+    display: flex;                     /* Use flexbox to arrange items in a row */
+    justify-content: space-between;    /* Space the items evenly */
+    margin-top: 20px;                 /* Add space above the services section */
+}
+
+.serviceBox {
+    background-color: #f0f0f0;        /* Light gray background for visibility */
+    border-radius: 8px;               /* Rounded corners */
+    padding: 20px;                    /* Space inside the boxes */
+    flex: 1;                          /* Allow boxes to grow equally */
+    margin: 0 10px;                   /* Space between boxes */
+    min-height: 200px;                /* Minimum height for the boxes */
+    max-width: 30%;                   /* Set a maximum width for each box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+}
+
+.serviceBox h2 {
+    margin-bottom: 10px;              /* Space below the title */
+}
+
+.serviceBox p {
+    font-size: 14px;                  /* Adjust font size */
+}
