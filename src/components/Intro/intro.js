@@ -1,27 +1,9 @@
 import React from 'react'
 import './intro.css'
 import bg from '../../assets/MozzeLogo.jpg'
-import pdf from '../../assets/car.png'
 
 
 const Intro = () => {
-  const onButtonClick = () => {
-
-    const pdfUrl = pdf;
-
-    const link = document.createElement("a");
-
-    link.href = pdfUrl;
-
-    link.download = "ex.pdf"; // specify the filename
-
-    document.body.appendChild(link);
-
-    link.click();
-
-    document.body.removeChild(link);
-
-};
   return (
     <section id="intro">
         <div className="introContent">

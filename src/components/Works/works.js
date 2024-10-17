@@ -6,7 +6,7 @@ const Works = () => {
 
   return (
     <section id='works'>
-      <h2 className="worksTitle">Gallery</h2>
+      <h2 className="worksTitle">Our Projects</h2>
       
       <BeholdWidget feedId='UaeJTMCGan7Zdp7sQULr'/>
     </section>

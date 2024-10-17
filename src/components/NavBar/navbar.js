@@ -56,14 +56,10 @@ const Navbar = () => {
         
         <div className="dropdownContainer">
           <RouterLink to="/" onClick={() => handleScrollTo('skills')} className="desktopMenuListItem">About</RouterLink>
-          <div className="dropdownContent">
-            <RouterLink to='/meetTeam' onClick={scrollToTop}>Meet The Team</RouterLink>
-            <RouterLink to="/" onClick={() => handleScrollTo('history')}>Our History</RouterLink>
-          </div>
         </div>
         
-        <RouterLink to="/" onClick={() => handleScrollTo('works')} className="desktopMenuListItem">Gallery</RouterLink>
-        <RouterLink to="/" onClick={() => handleScrollTo('clients')} className="desktopMenuListItem">Sponsors</RouterLink>
+        <RouterLink to="/" onClick={() => handleScrollTo('works')} className="desktopMenuListItem">Projects</RouterLink>
+        <RouterLink to="/" onClick={() => handleScrollTo('clients')} className="desktopMenuListItem">Services</RouterLink>
       </div>
       <button className="desktopMenuBtn" onClick={() => handleScrollTo('contact')}>
         <img src={contactImg} alt="Contact" className="desktopMenuImg" />Contact Us
