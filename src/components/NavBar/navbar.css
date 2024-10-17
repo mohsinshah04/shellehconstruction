@@ -13,19 +13,20 @@
     z-index: 3;
 }
 .logo {
-    object-fit: cover;
-    height: 4.5rem;
-    width: 4rem;
+    height: auto;                 /* Auto height to maintain aspect ratio */
+    width: 3rem;                  /* Fixed width */
+    display: block;               /* Block-level for centering */
 }
+
 .desktopMenuListItem {
     margin: 1rem;
     cursor: pointer;
     color: black;
 }
 .desktopMenuListItem:hover {
-    color: red;
+    color: darkorange;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid darkorange;
 }
 
 .desktopMenuBtn {
@@ -41,7 +42,7 @@
 
 }
 .desktopMenuBtn:hover {
-    color: red;
+    color: darkorange;
 }
 .desktopMenuImg {
     object-fit: cover;
@@ -51,9 +52,9 @@
 }
 
 .active {
-    color: red;
+    color: darkorange;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid darkorange;
 }
 
 .mobMenu {
@@ -119,5 +120,5 @@
   
 .dropdownContent a:hover {
     background-color: #f1f1f1;
-    color: red;
+    color: darkorange;
 }

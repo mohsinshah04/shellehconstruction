@@ -1,76 +1,43 @@
 #intro {
-    height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-}
-.bg {
-    position: absolute;
-    top: 0rem;
-    right: 0;
-    z-index: -1;
-    object-fit: cover;
-    height: 85vh;
-}
-
-.introContent {
-    height: 100vh;
-    width: 100vh;
-    max-width: 45rem;
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: 700;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;             /* Stack elements vertically */
+    align-items: center;                /* Center elements horizontally */
+    text-align: center;                 /* Center text */
+    padding: 40px 20px;                 /* Add padding around the intro section */
+    height: 100vh;                      /* Full viewport height */
+    box-sizing: border-box;             /* Include padding in height calculations */
 }
 
-.hello {
-    font-size: 1.75rem;
-    font-weight: 100;
+.bg {
+    width: auto;                        /* Set width to auto */
+    height: auto;                       /* Maintain aspect ratio */
+    max-width: 90%;                     /* Limit the width of the image */
+    max-height: 40%;                    /* Limit the height of the image to 40% of the viewport */
+    object-fit: contain;                /* Contain the image within the specified dimensions */
+    margin-top: 50px;                  /* Space above the image */
+    margin-bottom: 30px;               /* Space below the image */
+    padding: 20px;                      /* Add padding around the image */
 }
 
-.introName {
-    color: Red;
+.sloganContainer {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for the slogan */
+    padding: 20px;                      /* Space around the text */
+    border-radius: 10px;                /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 600px;                   /* Limit the width of the slogan box */
+    width: 90%;                         /* Responsive width */
+    margin-top: 100px;                  /* Add top margin to move the slogan down */
 }
 
-.introPara {
-    font-size: medium;
-    font-weight: 300;
-    letter-spacing: 1px;
+.slogan {
+    font-size: 24px;                    /* Font size for the slogan */
+    color: #333;                        /* Text color */
+    margin: 0;                         /* Remove default margin */
+    line-height: 1.4;                   /* Line height for readability */
 }
 
-.btn {
-    width: 15rem;
-    background: rgb(213, 4, 4);
-    color: white;
-    margin: 1rem 0;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 2rem;
-}
-.btnImg {
-    object-fit: cover;
-    margin: 0 0.25rem;
-    height: 1rem;
-}
-@media screen and (max-width:840px) {
-    .bg {
-        right: -10vw;
-    }
-    .introContent {
-        font-size: 10vw;
-    }
-    .hello {
-        font-size: 4.5vw;
-    }
-}
-@media screen and (max-width:480px) {
-    .bg {
-        right: 15vw;
-        top: 0rem;
-        height: 40vh;
-    }
+/* Optional: Add top padding to the whole section for better spacing */
+body {
+    margin: 0;                         /* Remove default margin */
+    padding-top: 20px;                 /* Add padding to the top of the body */
 }
