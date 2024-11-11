@@ -4,6 +4,7 @@ import Navbar from "./components/NavBar/navbar";
 import Intro from "./components/Intro/intro";
 import Skills from "./components/Skills/skills";
 import Works from "./components/Works/works";
+import Services from "./components/Services/services";
 import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
 function App() {
@@ -11,14 +12,11 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={
-          <>
-            <Intro />
-            <Skills />
-            <Works />
-            <Contact />
-          </>
-        } />
+        <Route path="/" element={<Intro />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
