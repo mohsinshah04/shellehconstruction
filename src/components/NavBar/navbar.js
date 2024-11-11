@@ -13,7 +13,7 @@ const Navbar = () => {
       <img src={logo} alt="Logo" className='logo' />
       <div className="desktopMenu">
         <RouterLink to="/" className="desktopMenuListItem">Home</RouterLink>
-        <RouterLink to="/skills" className="desktopMenuListItem">About</RouterLink>
+        <RouterLink to="/about" className="desktopMenuListItem">About</RouterLink>
         <RouterLink to="/works" className="desktopMenuListItem">Projects</RouterLink>
         <RouterLink to="/services" className="desktopMenuListItem">Services</RouterLink>
       </div>
@@ -26,7 +26,7 @@ const Navbar = () => {
       <img src={menu} alt="Menu" className='mobMenu' onClick={() => setShowMenu(!showMenu)} />
       <div className="navMenu" style={{ display: showMenu ? 'flex' : 'none' }}>
         <RouterLink to="/" onClick={() => setShowMenu(false)} className="listItem">Home</RouterLink>
-        <RouterLink to="/skills" onClick={() => setShowMenu(false)} className="listItem">About</RouterLink>
+        <RouterLink to="/about" onClick={() => setShowMenu(false)} className="listItem">About</RouterLink>
         <RouterLink to="/works" onClick={() => setShowMenu(false)} className="listItem">Projects</RouterLink>
         <RouterLink to="/services" onClick={() => setShowMenu(false)} className="listItem">Services</RouterLink>
         <RouterLink to="/contact" onClick={() => setShowMenu(false)} className="listItem">Contact</RouterLink>
